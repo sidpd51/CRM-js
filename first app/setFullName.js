@@ -4,7 +4,7 @@ function setFullName(executionContext) {
     var fullnameField = formContext.getAttribute('cf_textfield');
     
     if (lookupField.getValue() !== null) {
-        var lookupValue = lookupField.getValue()[0]; 
+        var lookupValue = lookupField.getValue()[0]; x
         
         //setting fullname to the lookup name field value
         fullnameField.setValue(lookupValue.name);
