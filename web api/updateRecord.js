@@ -1,12 +1,12 @@
-function createRecord() {
+function updateRecord() {
     const dob = new Date(2001, 4, 25);
     debugger
     const data = {
         "cf_choosepc": 100050002,
         "cf_customerlogicid": "pp-1004",
-        "cf_fullname": "rahulshah",
+        "cf_fullname": "Abhinav",
         "cf_phonenumber": "9142381990",
-        "cf_email": "rahul@gmail.com",
+        "cf_email": "abhinav@gmail.com",
         "cf_educationinfo": "1,2",
         "cf_maritalstatus": true,
         "cf_dateofbirth": dob.toISOString(),
@@ -15,9 +15,9 @@ function createRecord() {
     };
 
 
-    Xrm.WebApi.createRecord("cf_practical", data).then(
+    Xrm.WebApi.createRecord("cf_practical", data, "21c401a2-b929-ef11-840a-6045bde780d1").then(
         function success(data) {
-            console.log(`Record Created!`);
+            console.log(`Record Updated!`);
             console.log(data);
             console.log(`Record Type:  ${data.entityType}`);
             console.log(`Record Id:  ${data.id}`);
@@ -28,8 +28,4 @@ function createRecord() {
         }
     );
 }
-createRecord()
-
-// 2274f14d-ad29-ef11-840a-6045bde780d1
-
-// cf_parentname
+updateRecord()
