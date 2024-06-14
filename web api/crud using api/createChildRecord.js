@@ -4,15 +4,15 @@ function createRecord() {
     const data = {
         "cf_choosepc": 100050002,
         "cf_customerlogicid": "pp-1004",
-        "cf_fullname": "rahulshah",
+        "cf_fullname": "raman",
         "cf_phonenumber": "9142381990",
-        "cf_email": "rahul@gmail.com",
+        "cf_email": "raman@gmail.com",
         "cf_educationinfo": "1,2",
         "cf_maritalstatus": true,
         "cf_dateofbirth": dob.toISOString(),
         "cf_gender": 100050000,
-        "cf_parentname": {
-            
+        "cf_PracticalParent": {
+            "cf_parentname": "raman verma"
         }
     };
 

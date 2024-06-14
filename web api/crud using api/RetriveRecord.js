@@ -11,3 +11,18 @@ function RetriveSingleRecord(executionContext){
         }
     );
 }
+
+
+// this will not work as select is not used properly
+// Xrm.WebApi.retrieveRecord("cf_practical", "b2ceb56e-8729-ef11-840a-6045bde780d1", "?$select").then(
+//     function success(result) {
+//         console.log(result)
+//         // perform operations on record retrieval
+//     },
+//     function (error) {
+//         console.log(error.message);
+//         // handle error conditions
+//     }
+// );
+
+
