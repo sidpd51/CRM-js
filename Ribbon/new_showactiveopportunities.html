@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Active Opportunities</title>
+</head>
+
+<body>
+    <h2>Active Opportunities</h2>
+    <table border="1" id="opportunitiesTable">
+        <tr>
+            <th>Name</th>
+            <th>Created On</th>
+        </tr>
+        <!-- JavaScript to dynamically populate the table -->
+        <script type="text/javascript">
+            // Retrieve opportunities data passed from parent window
+            var opportunities = window.opener.opportunities;
+
+            // Display opportunities in the table
+            for (var i = 0; i < opportunities.length; i++) {
+                document.write("<tr>");
+                document.write("<td>" + opportunities[i].name + "</td>");
+                var createdOn = new Date(opportunities[i].createdon);
+                document.write("<td>" + createdOn.toLocaleDateString() + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+
+</html>
